@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Planos - Spotify Clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-black text-white">
+    <!-- Header -->
+    <header class="fixed w-full bg-black/90 backdrop-blur-sm z-50">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-2">
+                <img src="imagens/spotify.svg" alt="Spotify" class="h-10">
+            </a>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="hover:text-[#1DB954] transition-colors">Início</a>
+                <a href="#planos" class="hover:text-[#1DB954] transition-colors">Planos</a>
+                <a href="#suporte" class="hover:text-[#1DB954] transition-colors">Suporte</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="./pós-login/index.html" class="text-white hover:text-[#1DB954] transition-colors">Entrar</a>
+                <a href="#"
+                    class="bg-white text-black px-6 py-2 rounded-full hover:bg-[#1DB954] hover:text-white transition-colors">Inscrever-se</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 bg-gradient-to-b from-[#1DB954] to-black">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-5xl font-bold mb-8">Escolha seu plano Premium</h1>
+            <p class="text-xl mb-12">Ouça sem limites no seu celular, alto-falante e em outros dispositivos.</p>
+        </div>
+    </section>
+
+    <!-- Planos Section -->
+    <section id="planos" class="py-20 bg-black">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Plano Individual -->
+                <div class="bg-[#282828] p-8 rounded-lg hover:bg-[#383838] transition-colors">
+                    <h3 class="text-2xl font-bold mb-4">Individual</h3>
+                    <p class="text-3xl font-bold mb-6">R$ 19,90<span class="text-sm font-normal">/mês</span></p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center">
+                            <svg class="w-6 h-6 text-[#1DB954] mr-2" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Música sem anúncios
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-6 h-6 text-[#1DB954] mr-2" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Ouça em qualquer lugar
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-6 h-6 text-[#1DB954] mr-2" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Músicas sob demanda
+                        </li>
+                    </ul>
+                    <a href="#"
+                        class="block text-center bg-white text-black px-8 py-3 rounded-full hover:bg-[#1DB954] hover:text-white transition-colors"><b>Adquirir</b></a>
+                </div>
+
+                <!-- Plano Duo -->
+                <div class="bg-[#282828] p-8 rounded-lg hover:bg-[#383838] transition-colors">
+                    <h3 class="text-2xl font-bold mb-4">Duo</h3>
+                    <p class="text-3xl font-bold mb-6">R$ 24,90<span class="text-sm font-normal">/mês</span></p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center">
+                            <svg class="w-6 h-6 text-[#1DB954] mr-2" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            2 contas Premium
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-6 h-6 text-[#1DB954] mr-2" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Música sem anúncios
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-6 h-6 text-[#1DB954] mr-2" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Ouça em qualquer lugar
+                        </li>
+                    </ul>
+                    <a href="#"
+                        class="block text-center bg-white text-black px-8 py-3 rounded-full hover:bg-[#1DB954] hover:text-white transition-colors"><b>Adquirir</b></a>
+                </div>
+
+                <!-- Plano Família -->
+                <div class="bg-[#282828] p-8 rounded-lg hover:bg-[#383838] transition-colors">
+                    <h3 class="text-2xl font-bold mb-4">Família</h3>
+                    <p class="text-3xl font-bold mb-6">R$ 34,90<span class="text-sm font-normal">/mês</span></p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center">
+                            <svg class="w-6 h-6 text-[#1DB954] mr-2" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Até 6 contas Premium
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-6 h-6 text-[#1DB954] mr-2" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Controle parental
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-6 h-6 text-[#1DB954] mr-2" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Música sem anúncios
+                        </li>
+                    </ul>
+                    <a href="#"
+                        class="block text-center bg-white text-black px-8 py-3 rounded-full hover:bg-[#1DB954] hover:text-white transition-colors"><b>Adquirir</b></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Artistas em Destaque -->
+    <section id="artistas" class="py-20 bg-gradient-to-b from-black to-[#121212]">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-white mb-12">Artistas em Destaque</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-[#282828] p-6 rounded-lg hover:bg-[#383838] transition-colors">
+                    <img src="imagens/artista1.jpg" alt="Artista 1" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-bold text-white mb-2">Artista 1</h3>
+                    <p class="text-gray-400">Descrição do artista 1</p>
+                </div>
+                <div class="bg-[#282828] p-6 rounded-lg hover:bg-[#383838] transition-colors">
+                    <img src="imagens/artista2.jpg" alt="Artista 2" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-bold text-white mb-2">Artista 2</h3>
+                    <p class="text-gray-400">Descrição do artista 2</p>
+                </div>
+                <div class="bg-[#282828] p-6 rounded-lg hover:bg-[#383838] transition-colors">
+                    <img src="imagens/artista3.jpg" alt="Artista 3" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-bold text-white mb-2">Artista 3</h3>
+                    <p class="text-gray-400">Descrição do artista 3</p>
+                </div>
+                <div class="bg-[#282828] p-6 rounded-lg hover:bg-[#383838] transition-colors">
+                    <img src="imagens/artista4.jpg" alt="Artista 4" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-bold text-white mb-2">Artista 4</h3>
+                    <p class="text-gray-400">Descrição do artista 4</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Playlists Populares -->
+    <section id="playlists" class="py-20 bg-[#121212]">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-white mb-12">Playlists Populares</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-[#282828] p-6 rounded-lg hover:bg-[#383838] transition-colors">
+                    <img src="imagens/playlist1.jpg" alt="Playlist 1" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-bold text-white mb-2">Playlist 1</h3>
+                    <p class="text-gray-400">Descrição da playlist 1</p>
+                </div>
+                <div class="bg-[#282828] p-6 rounded-lg hover:bg-[#383838] transition-colors">
+                    <img src="imagens/playlist2.jpg" alt="Playlist 2" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-bold text-white mb-2">Playlist 2</h3>
+                    <p class="text-gray-400">Descrição da playlist 2</p>
+                </div>
+                <div class="bg-[#282828] p-6 rounded-lg hover:bg-[#383838] transition-colors">
+                    <img src="imagens/playlist3.jpg" alt="Playlist 3" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-bold text-white mb-2">Playlist 3</h3>
+                    <p class="text-gray-400">Descrição da playlist 3</p>
+                </div>
+                <div class="bg-[#282828] p-6 rounded-lg hover:bg-[#383838] transition-colors">
+                    <img src="imagens/playlist4.jpg" alt="Playlist 4" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-bold text-white mb-2">Playlist 4</h3>
+                    <p class="text-gray-400">Descrição da playlist 4</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Podcasts em Alta -->
+    <section id="podcasts" class="py-20 bg-gradient-to-b from-[#121212] to-black">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-white mb-12">Podcasts em Alta</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-[#282828] p-6 rounded-lg hover:bg-[#383838] transition-colors">
+                    <img src="imagens/podcast1.jpg" alt="Podcast 1" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-bold text-white mb-2">Podcast 1</h3>
+                    <p class="text-gray-400 mb-2">Apresentador: Nome do Apresentador</p>
+                    <p class="text-gray-400">Descrição do podcast 1</p>
+                </div>
+                <div class="bg-[#282828] p-6 rounded-lg hover:bg-[#383838] transition-colors">
+                    <img src="imagens/podcast2.jpg" alt="Podcast 2" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-bold text-white mb-2">Podcast 2</h3>
+                    <p class="text-gray-400 mb-2">Apresentador: Nome do Apresentador</p>
+                    <p class="text-gray-400">Descrição do podcast 2</p>
+                </div>
+                <div class="bg-[#282828] p-6 rounded-lg hover:bg-[#383838] transition-colors">
+                    <img src="imagens/podcast3.jpg" alt="Podcast 3" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-bold text-white mb-2">Podcast 3</h3>
+                    <p class="text-gray-400 mb-2">Apresentador: Nome do Apresentador</p>
+                    <p class="text-gray-400">Descrição do podcast 3</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <img src="imagens/spotify.svg" alt="Spotify" class="h-10 mb-4">
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-white hover:text-[#1DB954] transition-colors">
+                            <img src="imagens/instagram.png" alt="Instagram" class="h-6">
+                        </a>
+                        <a href="#" class="text-white hover:text-[#1DB954] transition-colors">
+                            <img src="imagens/twitter.png" alt="Twitter" class="h-6">
+                        </a>
+                        <a href="#" class="text-white hover:text-[#1DB954] transition-colors">
+                            <img src="imagens/facebook.png" alt="Facebook" class="h-6">
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Empresa</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Sobre</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Empregos</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">For the Record</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Comunidades</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Para Artistas</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Desenvolvedores</a>
+                        </li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Publicidade</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Links úteis</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Suporte</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Player da Web</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Aplicativo móvel
+                                grátis</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-gray-800">
+                <p class="text-gray-400">&copy; 2024 Spotify Clone. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
